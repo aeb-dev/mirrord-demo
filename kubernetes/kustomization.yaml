@@ -1,0 +1,3 @@
+resources:
+  - consumer-service.yaml
+  - publisher-service.yaml

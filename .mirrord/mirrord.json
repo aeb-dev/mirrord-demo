@@ -1,0 +1,13 @@
+{
+    "accept_invalid_certificates": true,
+    "feature": {
+        "network": {
+            "incoming": "steal"
+        },
+        "fs": {
+            "read_write": [
+                ".*output\\.txt"
+            ]
+        }
+    }
+}

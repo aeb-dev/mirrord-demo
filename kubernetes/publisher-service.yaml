@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: publisher-service
+  labels:
+    app: publisher-service
+spec:
+  selector:
+    matchLabels:
+      app: publisher-service
+  template:
+    metadata:
+      labels:
+        app: publisher-service
+    spec:
+      containers:
+        - name: publisher-service
+          imagePullPolicy: IfNotPresent
+          image: bayraktarahmetenes/publisher-service:1.0.0
